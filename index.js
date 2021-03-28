@@ -49,6 +49,10 @@ client.on('message', message =>{
     if(command === 'mute'){
         client.commands.get('mute').execute(message, args);
     }  
+
+    if(command === 'unmute'){
+        client.commands.get('unmute').execute(message, args);
+    }  
 });
 
 client.login(process.env.token);

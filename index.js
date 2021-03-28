@@ -37,6 +37,11 @@ client.on('message', message =>{
     if(command === 'hallo'){
         client.commands.get('hallo').execute(message, args);
     }  
+
+
+    if(command === 'kick'){
+        client.commands.get('kick').execute(message, args);
+    }  
 });
  
 client.login(process.env.token);

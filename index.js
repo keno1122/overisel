@@ -46,8 +46,8 @@ client.on('message', message =>{
         client.commands.get('ban').execute(message, args);
     }
 
-    if(command === 'sugest'){
-        client.commands.get('sugest').execute(message, args);
+    if(command === 'suggest'){
+        client.commands.get('suggest').execute(message, args);
     }  
 });
 

@@ -44,7 +44,11 @@ client.on('message', message =>{
     }  
     if(command === 'ban'){
         client.commands.get('ban').execute(message, args);
+    }
+
+    if(command === 'sugest'){
+        client.commands.get('sugest').execute(message, args);
     }  
 });
- 
+
 client.login(process.env.token);

@@ -42,6 +42,9 @@ client.on('message', message =>{
     if(command === 'kick'){
         client.commands.get('kick').execute(message, args);
     }  
+    if(command === 'ban'){
+        client.commands.get('ban').execute(message, args);
+    }  
 });
  
 client.login(process.env.token);
